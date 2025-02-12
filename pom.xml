@@ -27,7 +27,7 @@
     </developers>
     <scm>
         <connection/>
-        <developerConnection/>
+        <developerConnection>scm:git:https://github.com/jardelbrando/sfg-pet-clinic.git</developerConnection>
         <tag/>
         <url/>
     </scm>
@@ -77,5 +77,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
