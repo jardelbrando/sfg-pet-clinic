@@ -1,0 +1,22 @@
+.center{
+    display: flex;
+    align-items: center;
+}
+.img-logo{
+    height: 30px;
+    margin-left: 150px;
+}
+.navbar-background{
+    background-color: #5d5d5d;
+    border: none;
+    border-radius: 0px;
+}
+navbar-button{
+    background-color: transparent;
+}
+.navbar-button:hover{
+    background-color: #5fa134;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    background-color: #5fa134;
+}
