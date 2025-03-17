@@ -7,8 +7,6 @@ import springclass.sfgpetclinic.services.OwnerService;
 import springclass.sfgpetclinic.services.PetTypeService;
 import springclass.sfgpetclinic.services.SpecialtyService;
 import springclass.sfgpetclinic.services.VetService;
-import springclass.sfgpetclinic.services.map.OwnerServiceMap;
-import springclass.sfgpetclinic.services.map.VetServiceMap;
 
 import java.time.LocalDate;
 
