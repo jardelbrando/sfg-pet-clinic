@@ -1,5 +1,6 @@
 package springclass.sfgpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import springclass.sfgpetclinic.model.Specialty;
 import springclass.sfgpetclinic.services.SpecialtyService;
@@ -11,6 +12,7 @@ import java.util.Set;
  * @date 27/02/2025
  */
 @Service
+@Profile({"default", "map"})
 public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
     @Override

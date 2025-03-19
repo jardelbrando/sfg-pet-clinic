@@ -8,14 +8,14 @@ import java.util.Set;
 @Entity
 public class Vet extends Person{
 
-    private Set<Specialty> specialties = new HashSet<>();
-
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "vet_speacialty",
         joinColumns = @JoinColumn(name = "vet_id"),
         inverseJoinColumns = @JoinColumn(name = "specialty_id")
     )
+    private Set<Specialty> specialties = new HashSet<>();
+
     public Set<Specialty> getSpecialties() {
         return specialties;
     }
