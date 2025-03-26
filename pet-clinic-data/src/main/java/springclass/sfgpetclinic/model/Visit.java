@@ -1,6 +1,7 @@
 package springclass.sfgpetclinic.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -9,6 +10,11 @@ import java.time.LocalDate;
  * @date 26/02/2025
  */
 @Entity
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Table(name = "visits")
 public class Visit extends BaseEntity{
 
@@ -21,28 +27,4 @@ public class Visit extends BaseEntity{
     @ManyToOne
     @JoinColumn(name = "pet_id")
     private Pet pet;
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Pet getPet() {
-        return pet;
-    }
-
-    public void setPet(Pet pet) {
-        this.pet = pet;
-    }
 }
