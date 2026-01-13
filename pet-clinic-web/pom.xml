@@ -20,6 +20,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
             <artifactId>pet-clinic-data</artifactId>
             <groupId>springClass</groupId>
             <version>0.0.3-SNAPSHOT</version>
